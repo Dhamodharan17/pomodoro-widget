@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pomodoro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Pomodoro</h1>
+
+<div class="settings">
+<label>
+Focus
+<input id="focus" type="number" value="25">
+</label>
+
+<label>
+Short Break
+<input id="short" type="number" value="5">
+</label>
+
+<label>
+Long Break
+<input id="long" type="number" value="15">
+</label>
+</div>
+
+
+<div class="modes">
+<button onclick="setMode('focus')">
+Focus
+</button>
+
+<button onclick="setMode('short')">
+Short Break
+</button>
+
+<button onclick="setMode('long')">
+Long Break
+</button>
+</div>
+
+
+<div id="timer">
+25:00
+</div>
+
+
+<div>
+<button onclick="start()">Start</button>
+<button onclick="pause()">Pause</button>
+<button onclick="reset()">Reset</button>
+</div>
+
+
+<button onclick="openFloat()">
+Open Floating Timer
+</button>
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
